@@ -82,13 +82,13 @@ graph TB
 
 | Service | Purpose | Technology | Status |
 |---------|---------|------------|--------|
-| **[Document Ingestion](rag-document-ingestion-service/)** | Secure file upload & validation | Lambda, S3, JWT | ✅ Production |
-| **[Document Processing](rag-document-processing-service/)** | OCR, parsing, text extraction | Lambda (+ ECS hybrid option) | ✅ Production |
-| **[Embedding Service](rag-embedding-service/)** | Text to vector conversion | AWS Bedrock Titan | ✅ Production |
-| **[Vector Storage](rag-vector-storage-service/)** | Secure proxy to home server | Lambda, API Gateway | ✅ Production |
-| **[Knowledge Retrieval](rag-knowledge-retrieval-service/)** | Context optimization | Lambda, DynamoDB | ✅ Production |
-| **[Generation Service](rag-generation-service/)** | RAG orchestration & response | AWS Bedrock Claude | ✅ Production |
-| **[Home Vector Server](home-vector-server/)** | High-performance vector DB | Node.js, Weaviate | ✅ Production |
+| **[Document Ingestion](../../rag-document-ingestion-service/)** | Secure file upload & validation | Lambda, S3, JWT | ✅ Production |
+| **[Document Processing](../../rag-document-processing-service/)** | OCR, parsing, text extraction | Lambda (+ ECS hybrid option) | ✅ Production |
+| **[Embedding Service](../../rag-embedding-service/)** | Text to vector conversion | AWS Bedrock Titan | ✅ Production |
+| **[Vector Storage](../../rag-vector-storage-service/)** | Secure proxy to home server | Lambda, API Gateway | ✅ Production |
+| **[Knowledge Retrieval](../../rag-knowledge-retrieval-service/)** | Context optimization | Lambda, DynamoDB | ✅ Production |
+| **[Generation Service](../../rag-generation-service/)** | RAG orchestration & response | AWS Bedrock Claude | ✅ Production |
+| **[Home Vector Server](../../home-vector-server/)** | High-performance vector DB | Node.js, Weaviate | ✅ Production |
 
 ### Supporting Infrastructure
 
@@ -164,7 +164,7 @@ graph LR
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-org/odmd-rag.git
+git clone https://github.com/odmd-rag/odmd-rag.git
 cd odmd-rag
 
 # 2. Deploy AWS services
@@ -273,12 +273,12 @@ Each service directory contains detailed architecture and implementation guides:
 - Home Vector Server: Weaviate integration and security
 
 **📋 Quick Links:**
-- [📋 Documentation Index](.github/profile/INDEX.md) - Navigate by role (Developer, DevOps, Architect)
-- [🏗️ System Architecture](.github/profile/ARCHITECTURE.md) - Technical architecture overview
-- [🚀 Implementation Status](.github/profile/IMPLEMENTATION_STATUS.md) - **Current vs planned features**
-- [💰 Cost Analysis](.github/profile/COST_ANALYSIS.md) - Detailed cost breakdown and savings
-- [🛡️ Security Guide](.github/profile/SECURITY.md) - Multi-layer security implementation
-- [🚀 Deployment Guide](.github/profile/DEPLOYMENT_GUIDE.md) - Step-by-step deployment instructions
+- [📋 Documentation Index](INDEX.md) - Navigate by role (Developer, DevOps, Architect)
+- [🏗️ System Architecture](ARCHITECTURE.md) - Technical architecture overview
+- [🚀 Implementation Status](IMPLEMENTATION_STATUS.md) - **Current vs planned features**
+- [💰 Cost Analysis](COST_ANALYSIS.md) - Detailed cost breakdown and savings
+- [🛡️ Security Guide](SECURITY.md) - Multi-layer security implementation
+- [🚀 Deployment Guide](DEPLOYMENT_GUIDE.md) - Step-by-step deployment instructions
 
 > **📝 Documentation Status**: Recently updated (Jan 2025) to accurately reflect current Lambda-based implementation with ECS as future scaling option. All architecture diagrams and cost analyses updated to match production reality.
 
