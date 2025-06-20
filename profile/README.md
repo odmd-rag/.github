@@ -82,13 +82,15 @@ graph TB
 
 | Service | Purpose | Technology | Status |
 |---------|---------|------------|--------|
-| **[Document Ingestion](../../rag-document-ingestion-service/)** | Secure file upload & validation | Lambda, S3, JWT | ✅ Production |
-| **[Document Processing](../../rag-document-processing-service/)** | OCR, parsing, text extraction | Lambda (+ ECS hybrid option) | ✅ Production |
-| **[Embedding Service](../../rag-embedding-service/)** | Text to vector conversion | AWS Bedrock Titan | ✅ Production |
-| **[Vector Storage](../../rag-vector-storage-service/)** | Secure proxy to home server | Lambda, API Gateway | ✅ Production |
-| **[Knowledge Retrieval](../../rag-knowledge-retrieval-service/)** | Context optimization | Lambda, DynamoDB | ✅ Production |
-| **[Generation Service](../../rag-generation-service/)** | RAG orchestration & response | AWS Bedrock Claude | ✅ Production |
-| **[Home Vector Server](../../home-vector-server/)** | High-performance vector DB | Node.js, Weaviate | ✅ Production |
+| **[Document Ingestion](https://github.com/odmd-rag/rag-document-ingestion-service)** | Secure file upload & validation | Lambda, S3, JWT | ✅ Production |
+| **[Document Processing](https://github.com/odmd-rag/rag-document-processing-service)** | OCR, parsing, text extraction | Lambda (+ ECS hybrid option) | ✅ Production |
+| **[Embedding Service](https://github.com/odmd-rag/rag-embedding-service)** | Text to vector conversion | AWS Bedrock Titan | ✅ Production |
+| **[Vector Storage](https://github.com/odmd-rag/rag-vector-storage-service)** | Secure proxy to home server | Lambda, API Gateway | ✅ Production |
+| **[Knowledge Retrieval](https://github.com/odmd-rag/rag-knowledge-retrieval-service)** | Context optimization | Lambda, DynamoDB | ✅ Production |
+| **[Generation Service](https://github.com/odmd-rag/rag-generation-service)** | RAG orchestration & response | AWS Bedrock Claude | ✅ Production |
+| **[Home Vector Server](https://github.com/odmd-rag/home-vector-server)** | High-performance vector DB | Node.js, Weaviate | ✅ Production |
+
+> **📋 Repository Structure**: Each service is maintained as a separate GitHub repository under the [odmd-rag organization](https://github.com/odmd-rag). Click the service names above to access individual repositories with detailed implementation guides.
 
 ### Supporting Infrastructure
 
