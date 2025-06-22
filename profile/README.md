@@ -239,50 +239,55 @@ npm run deploy:dev
 
 ```
 odmd-rag/
-├── 📄 README.md                                    # This file
-├── 🏗️ HYBRID_RAG_ARCHITECTURE.md                  # Overall system design
-├── 📋 DOCUMENT_LIFECYCLE_ARCHITECTURE.md          # Document management
+├── 📄 README.md                                    # Repository overview
+├── 📁 .github/                                     # Organization documentation
+│   ├── 📄 profile/README.md                       # This organization front page
+│   ├── 🏗️ HYBRID_RAG_ARCHITECTURE.md              # Complete system architecture
+│   ├── 🗺️ MULTI_ENVER_ROADMAP.md                  # Multi-enver strategy & roadmap
+│   └── 📋 DOCUMENT_LIFECYCLE_ARCHITECTURE.md      # Document management flow
 │
-├── 📦 contractsLib-rag/                           # Service contracts
+├── 📦 contractsLib-rag/                           # Service contracts & testing
 │   ├── 📘 HIERARCHICAL_NAMING_CONVENTION.md       # IAM naming patterns
 │   ├── ✅ IMPLEMENTATION_COMPLETE.md              # Implementation status
-│   └── 📚 IMPLEMENTATION_GUIDE.md                 # Development guide
+│   └── 🧪 HYBRID_ARCHITECTURE_TEST_UPDATES.md     # Contract testing approach
 │
-├── 🌐 rag-document-ingestion-service/             # File upload service
-│   ├── 🔐 AUTHENTICATION_ARCHITECTURE.md          # Auth implementation
-│   └── 🧹 CLEAN-ARCHITECTURE.md                   # Code reduction story
+├── 🌐 rag-document-ingestion-service/             # Secure file upload service
+│   ├── 🔐 AUTHENTICATION_ARCHITECTURE.md          # JWT & Cognito integration
+│   └── 🧹 CLEAN-ARCHITECTURE.md                   # Code reduction (88% savings)
 │
-├── ⚙️ rag-document-processing-service/            # Document processing
-│   └── 🏗️ ARCHITECTURE.md                        # Processing pipeline
+├── ⚙️ rag-document-processing-service/            # Document processing pipeline
+│   └── 🏗️ README.md                              # Lambda + ECS hybrid architecture
 │
-├── 🧠 rag-embedding-service/                      # Vector embeddings
-│
-├── 🗄️ rag-vector-storage-service/                 # Vector proxy service
-├── 🔍 rag-knowledge-retrieval-service/            # Context optimization
-├── ✨ rag-generation-service/                     # Response generation
-└── 🏠 home-vector-server/                         # Home vector database
+├── 🧠 rag-embedding-service/                      # AWS Bedrock vector embeddings
+├── 🗄️ rag-vector-storage-service/                 # Secure proxy to home server
+├── 🔍 rag-knowledge-retrieval-service/            # Context optimization service
+├── ✨ rag-generation-service/                     # RAG orchestration & generation
+└── 🏠 home-vector-server/                         # Weaviate-based vector database
 ```
 
 ## 📚 **Documentation & Architecture**
 
+### **🏗️ Core Architecture Documents**
+- **[Hybrid RAG Architecture](../HYBRID_RAG_ARCHITECTURE.md)** - Complete system architecture with hybrid cloud-home integration
+- **[Multi-Enver Roadmap](../MULTI_ENVER_ROADMAP.md)** - Multiple implementation strategies and future enver plans
+- **[Document Lifecycle Architecture](../DOCUMENT_LIFECYCLE_ARCHITECTURE.md)** - Document processing flow and lifecycle management
+
+### **🔧 Service Implementation Guides**
 Each service directory contains detailed architecture and implementation guides:
-- Document Ingestion: Authentication and clean architecture
-- Document Processing: Lambda-based processing with ECS hybrid scaling  
-- Embedding Service: Bedrock integration and optimization
-- Vector Storage: Simplified proxy architecture
-- Knowledge Retrieval: Context optimization and query enhancement
-- Generation Service: RAG orchestration and response generation
-- Home Vector Server: Weaviate integration and security
+- **Document Ingestion**: Authentication and clean architecture patterns
+- **Document Processing**: Lambda-based processing with ECS hybrid scaling options
+- **Embedding Service**: AWS Bedrock integration and cost optimization
+- **Vector Storage**: Simplified secure proxy architecture to home server
+- **Knowledge Retrieval**: Context optimization and intelligent query enhancement
+- **Generation Service**: RAG orchestration and response generation pipeline
+- **Home Vector Server**: Weaviate integration with enterprise security
 
-**📋 Quick Links:**
-- [📋 Documentation Index](INDEX.md) - Navigate by role (Developer, DevOps, Architect)
-- [🏗️ System Architecture](ARCHITECTURE.md) - Technical architecture overview
-- [🚀 Implementation Status](IMPLEMENTATION_STATUS.md) - **Current vs planned features**
-- [💰 Cost Analysis](COST_ANALYSIS.md) - Detailed cost breakdown and savings
-- [🛡️ Security Guide](SECURITY.md) - Multi-layer security implementation
-- [🚀 Deployment Guide](DEPLOYMENT_GUIDE.md) - Step-by-step deployment instructions
+### **📋 Implementation Status**
+- **[Implementation Complete](../contractsLib-rag/IMPLEMENTATION_COMPLETE.md)** - Comprehensive implementation status and patterns
+- **[Test Updates](../contractsLib-rag/HYBRID_ARCHITECTURE_TEST_UPDATES.md)** - Contract testing approach and validation
+- **[Hierarchical Naming](../contractsLib-rag/HIERARCHICAL_NAMING_CONVENTION.md)** - IAM security patterns
 
-> **📝 Documentation Status**: Recently updated (Jan 2025) to accurately reflect current Lambda-based implementation with ECS as future scaling option. All architecture diagrams and cost analyses updated to match production reality.
+> **📝 Documentation Status**: Recently updated (December 2024) to reflect the complete hybrid architecture implementation. All 21/21 contract tests passing with comprehensive service documentation updated for the simplified proxy patterns and cost-optimized approach.
 
 ## 🎓 Key Innovations
 
@@ -291,17 +296,23 @@ Each service directory contains detailed architecture and implementation guides:
 - Maintains enterprise security while achieving 85% cost savings
 - Eliminates vendor lock-in for vector storage
 
-### 2. **Contract-Based Service Architecture**
+### 2. **Multi-Enver Architecture Strategy**
+- **Multiple environment versions** on different branches with different architectural approaches
+- **Current**: Vector Storage `dev` (home server) + Document Processing `dev` (Lambda only)
+- **Planned**: Vector Storage `dev-pine` (Pinecone) + Document Processing `dev-ecs` (ECS hybrid)
+- **Benefits**: Architectural flexibility, cost optimization, risk mitigation, innovation
+
+### 3. **Contract-Based Service Architecture**
 - OnDemandEnv contracts eliminate circular dependencies
 - Type-safe service definitions with automatic validation
 - 95% faster deployment through VPC-free serverless patterns
 
-### 3. **Hierarchical IAM Security Model**
+### 4. **Hierarchical IAM Security Model**
 - Clean service boundaries with wildcard IAM conditions
 - No role ARN sharing between services
 - Scalable security that supports unlimited service growth
 
-### 4. **Intelligent Document Lifecycle Management**
+### 5. **Intelligent Document Lifecycle Management**
 - Multi-layer content fingerprinting for duplicate detection
 - Version-aware document updates and replacements
 - Cross-format content recognition (PDF ↔ Word ↔ Text)
