@@ -13,6 +13,7 @@
 | Document | Description | Key Topics |
 |----------|-------------|------------|
 | **[ARCHITECTURE.md](ARCHITECTURE.md)** | Complete system architecture | Service design, data flow, scalability |
+| **[SCHEMA_CONTRACTS.md](SCHEMA_CONTRACTS.md)** | Data contracts & schema management | Schema-as-artifact pattern, runtime validation |
 | **[DOCUMENT_LIFECYCLE.md](DOCUMENT_LIFECYCLE.md)** | Document management system | Content fingerprinting, version control |
 | **[HIERARCHICAL_IAM.md](HIERARCHICAL_IAM.md)** | IAM security patterns | Role naming, cross-service access |
 | **[CLEAN_ARCHITECTURE.md](CLEAN_ARCHITECTURE.md)** | Code simplification | 88% code reduction, performance gains |
@@ -44,6 +45,7 @@
 
 ### 👨‍💻 For Developers
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical implementation
+- **[SCHEMA_CONTRACTS.md](SCHEMA_CONTRACTS.md)** - Data contracts and validation patterns
 - **[HIERARCHICAL_IAM.md](HIERARCHICAL_IAM.md)** - Security patterns
 - **[CLEAN_ARCHITECTURE.md](CLEAN_ARCHITECTURE.md)** - Code best practices
 
@@ -54,6 +56,7 @@
 
 ### 📊 For System Architects
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - System design patterns
+- **[SCHEMA_CONTRACTS.md](SCHEMA_CONTRACTS.md)** - Service boundary contracts
 - **[DOCUMENT_LIFECYCLE.md](DOCUMENT_LIFECYCLE.md)** - Data management
 
 ## 🎯 Key Concepts Explained
